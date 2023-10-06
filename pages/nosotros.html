@@ -1,0 +1,192 @@
+<!doctype html>
+<html data-bs-theme="dark" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/css/maquina.css">
+
+    <title>VENTA DE LIBROS-Carrito</title>
+  </head>
+  <body>
+<!-- d-flex justify-content-center -->
+<header class="container-fluid  ">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary  RedondeoNav" >
+    <div class="container-fluid">
+      <div class="contenedorImg">
+        <img src="/public/fotos/imagenLogo.webp" alt="" class="img-fluid"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nosotros.html"><button class="btn btn-sm btn-outline-secondary" type="button">Quienes somos?</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html"><button class="btn btn-sm btn-outline-secondary" type="button">Contacto</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html"><button class="btn btn-sm btn-outline-secondary" type="button">Index</button></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" ><button id="modo" class="btn btn-sm btn-outline-secondary" type="button"><i  class="fa-regular fa-sun"></i></button></a>
+          </li>
+          <li class="nav-item">
+            <li class="nav-link">
+              <div  class="dropdown">
+                <a class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bag"></i>
+                </a>
+                <ul id="carrito" class="dropdown-menu mx-3">
+                  <table id="lista-carrito" class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">imagen</th>
+                        <th scope="col">Formato</th>
+                        <th scope="col">Precio</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      
+                      </tr>
+                      <tr>
+                    </tbody>
+                  </table>
+                  <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                    <button id="vaciar-carrito" class="btn ExeBoton1">Vaciar Carrito</button>
+                    <button id="procesar-carrito" class="btn ExeBoton1">Procesar Compra</button>
+                  </div>
+                </ul>
+              </div>
+            </li>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Ingrese Titulo aqui" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container estilos2doNav  ">
+    <p class="Pnav">"Abre un libro y descubre un universo lleno de historias por explorar, conocimientos por adquirir y sueños por realizar."</p>
+  </div>
+</header >
+
+
+<main class="container mt-5 nosotros">
+<div class="row">
+    <div class="col-7 ">
+    <h1 class="biblio text-body-secondary">Datos curisos sobre <em>Nosotros</em></h1>
+    <p class="biblio text-body-secondary">¡Bienvenido a la maravillosa historia de la librería online <em>"<em>LibroVerse</em>"</em>! Esta es una plataforma mágica que permite a los amantes de los libros explorar y descubrir una extensa colección de obras literarias de todos los géneros. <br>
+
+        Hace algunos años, en el año 2010, un joven emprendedor llamado <em>Jimmy Wales</em> se encontraba sumergido en la lectura de su libro favorito en un parque cercano a su casa. A medida que avanzaba en las páginas, se dio cuenta de lo difícil que era conseguir títulos que realmente le interesaran en las librerías locales. <br>
+        
+        La idea de crear una solución digital que permitiera a los lectores acceder a un sinfín de libros y autores comenzó a rondar en la mente de Alex. Estaba convencido de que un servicio en línea, en el que las personas pudieran explorar libros de todo el mundo sin restricciones geográficas, sería un sueño hecho realidad para los amantes de la lectura. <br>
+        
+        Con su pasión y entusiasmo, Alex se dedicó a dar forma a su visión. Se rodeó de un equipo de desarrolladores y expertos en tecnología para llevar a cabo la creación de esta revolucionaria librería online. Trabajaron incansablemente, superando obstáculos y desafíos, para hacer realidad el proyecto. <br>
+        
+        Finalmente, en el año 2012, <em>LibroVerse</em> se lanzó oficialmente al mundo. La plataforma ofrecía una interfaz intuitiva y atractiva que permitía a los usuarios buscar, comprar y leer libros electrónicos de manera sencilla. Además, la librería en línea también ofrecía versiones físicas de los libros, permitiendo a los usuarios recibir sus ejemplares en la comodidad de sus hogares. <br>
+        
+        En poco tiempo, <em>LibroVerse</em> se convirtió en un éxito rotundo. Lectores de todas partes del mundo se unieron a la plataforma para descubrir nuevas historias, sumergirse en mundos ficticios y aprender de autores destacados. La librería online se destacó por su amplia selección de títulos, su servicio al cliente excepcional y su dedicación a la promoción de autores independientes. <br>
+        
+        Con el tiempo, <em>LibroVerse</em> expandió su alcance al ofrecer servicios de suscripción, recomendaciones personalizadas y una comunidad activa de lectores que podían compartir sus opiniones y reseñas sobre los libros que habían leído. <br>
+        
+        El fundador, <em>Jimmy Wales</em>, se convirtió en una inspiración para otros emprendedores y amantes de la lectura. Su visión y pasión por los libros y la tecnología cambiaron la forma en que las personas accedían y disfrutaban de la lectura en todo el mundo. <br>
+        
+        Hasta el día de hoy, <em>LibroVerse</em> continúa siendo una de las librerías online más grandes y populares del mundo, y su legado perdura en la forma en que millones de lectores disfrutan de la magia de los libros en la era digital.</p> <br> 
+        <div class="biblio-nosotros ">
+          <ul>
+              <li ><a href="https://www.facebook.com/jimmywales" target="_blank" class="scaleicon"><i  class="fa-brands fa-facebook-f fa-2x fb" ></i></a></li>
+              <li ><a href="https://twitter.com/jimmy_wales" target="_blank" class="scaleicon"><i class="fa-solid fa-hashtag fa-2x tw"  ></i></a></li>
+              <li ><a href="https://www.instagram.com/wales9580/" target="_blank" class="scaleicon"><i class="fa-brands fa-instagram fa-2x inst" ></i></a></li>
+              <li ><a href="mailto:jimmy@gmail.com" target="_blank" class="scaleicon"><i class="fa-regular fa-envelope fa-2x mail" ></i></a></li>
+              <li><a href="https://www.youtube.com/watch?v=ztVWGBWqUh0" target="_blank" class="scaleicon" ><i class="fa-brands fa-youtube fa-2x yt"></i></a></li>
+          </ul>
+      </div>
+    </div>
+      <!-- col 5 -->
+    <div class="col-5 ">
+    <img class="img-thumbnail mt-5 " src="/public/fotos/willyPhotoshop.webp" alt="">
+    <img class="img-thumbnail mt-5 mb-5" src="/public/fotos/jimmy-wales-photoshopI.webp" alt="">
+    <h2 class="mt-5  pbiblio text-body-secondary " >Para mas informacion sobre la vida de Jimmy Wales , por favor hacer click aqui  para ir a la bibliografia <a href=""><i class="bi bi-pencil-square"></i></a></h2>
+
+    </div>
+<!-- fin col5 -->
+
+
+</main>
+
+<!-- whatsapp -->
+<div class="WhatsappDIV">
+  <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+</div>
+
+
+<footer>
+  
+  <div class="container-fluid footerContacto pt-5 pb-4">
+    <hr>
+    <div class="row">
+      
+      <p class="d-flex justify-content-center colorfooter">Si te suscribes a nuestros mails, podras obtener benecificos en tus proximas compras! 20% off</p>
+      <!-- inicio col 1 footer -->
+      <div class="col-4">
+        <h3 class="estilosFoter">Gracias por confian en nosotros</h3>
+        <p class="colorfooter">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error dolorem accusantium id voluptas magnam ipsum nostrum illo aut mollitia doloremque!</p>
+        <a href="https://www.chroniclebooks.com/pages/privacy-policy">Politicasa de privacidad</a>/ <a href="https://www.chroniclebooks.com/pages/ccpa-opt-out">No vender informacion personal</a><br>
+        <a href="https://www.wipo.int/portal/es/">Propiedad intelectual</a>
+        <!-- fin columna 1 footer de footer -->
+        <!-- inicio colmna 2 footer -->
+      </div>
+      <div class="col-4">
+      <ul class="list-group-flush ">
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-3">Publicidad y Asesoramiento</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-4">Contratos por medios electronicos</a></li >
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-5">Arrepentimientos y Terminologia</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-6">Clausulas abusivas</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-7">Contrato de adhesion</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#ley">Texto completo de la norma</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-1">Consumidor y consumidoras</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-2">Relaciones de consumo</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/asuntos-estrategicos/estrategia-nacional-para-el-desarrollo-de-la-economia-del-hidrogeno/desarrollo">Desarrolo de proveedores</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/asuntos-estrategicos/estrategia-nacional-para-el-desarrollo-de-la-economia-del-hidrogeno/integracion">Integracion y fortalecimiento de webs</a></li>
+      </ul>
+      </div>
+      <!-- fin col2 footer -->
+      <!-- inicio columna 3 footer -->
+      <div class="col-4">
+        <h3 class="estilosFoter">Coorporation Asocietive</h3>
+        
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia neque cumque magnam, architecto iusto nobis esse nihil dolores placeat repellendus ducimus velit, porro nisi molestias. Explicabo laborum dolores similique alias!</p>
+        <div class="row  ">
+          <div class="card-body imgEmpresas ms-4 ">
+            
+              <img src="/criptomonedas/bitcionOptimazado.webp" alt="">
+              <img src="/criptomonedas/dogeOptimizada.webp" alt="">
+              <img src="/criptomonedas/etherOptimizado.webp" alt="">
+              <img src="/criptomonedas/rippleOptimizada.webp" alt="">
+              <p class="colorfooter">Todos los detechos reservados.</p>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p>Copyrigh☺2023,Choniclik books</p>
+  </div>
+
+</footer>
+  
+<script type="module" src="/main.js"></script>
+</body>
+</html>

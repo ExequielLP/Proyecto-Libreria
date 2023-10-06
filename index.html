@@ -1,0 +1,447 @@
+<!doctype html>
+<html  data-bs-theme="dark" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+
+    <title>VENTA DE LIBROS</title>
+  </head>
+  <body >
+
+    <header class="container-fluid" >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary RedondeoNav">
+        <div class="container-fluid">
+          <div class="contenedorImg">
+            <img src="public/fotos/imagenLogo.webp" alt="" class="img-fluid"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pages/nosotros.html"><button class="btn btn-sm btn-outline-secondary" type="button">Quienes somos?</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pages/contacto.html"><button class="btn btn-sm btn-outline-secondary" type="button">Contacto</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><button class="btn btn-sm btn-outline-secondary" type="button">Inicio</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" ><button id="modo" class="btn btn-sm btn-outline-secondary" type="button"><i  class="fa-regular fa-sun"></i></button></a>
+              </li>
+              <li class="nav-item">
+                <li class="nav-link">
+                  <div  class="dropdown">
+                    <a class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bag"></i>
+                    </a>
+                    <ul id="carrito" class="dropdown-menu mx-3">
+                      <table id="lista-carrito" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">imagen</th>
+                            <th scope="col">Formato</th>
+                            <th scope="col">Precio</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                          
+                          </tr>
+                          <tr>
+                        </tbody>
+                      </table>
+                      <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                        <button id="vaciar-carrito" class="btn ExeBoton1">Vaciar Carrito</button>
+                        <button id="procesar-carrito" class="btn ExeBoton1">Procesar Compra</button>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
+              </li>
+
+<!--               <li class="nav-item">
+                <a class="nav-link" href="pages/carrito.html"><button class="btn btn-sm btn-outline-secondary" type="button"><i class="bi bi-bag"></i></button></a>
+              </li> -->
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ingrese Titulo aqui" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container estilos2doNav  ">
+        <p class="Pnav">"Un libro es un amigo que nunca falla, un maestro que nunca juzga y un compañero que nunca decepciona." - Carl Sagan</p>
+      </div>
+    </header >
+
+<main class="container justify-content-center">
+  <!-- carrusel -->
+<section class="container   contenedorCarusel  mt-3 carousel-fade   ">
+  <!-- aca va corousel -->
+<div class="row justify-content-center">
+  <!-- CARRUSEL 1 -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-bs-ride="carousel"  data-bs-interval="2300" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/imagenesCarusel/Foto1_optimizada.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen y le agregue una trnassicion copada -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU HOGAR</h5>
+            <p>El confortante placer de leer en tu hogar</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/imagenesCarusel/Foto2Optimizada.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen  y le agregue transiscion-->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU HOGAR</h5>
+            <p>El confortanto placer de leer en tu hogar</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/imagenesCarusel/foto3Optimizada.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen, tambien transcicion -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU HOGAR</h5>
+            <p>El confortanto placer de leer en tu hogar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- CARRUSEL 2 -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-bs-ride="carousel"  data-bs-interval="2300" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/imagenesCarusel/CARUSEL2-1Optimizada.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen y le agregue una trnassicion copada -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU LIBRO FAVORITO</h5>
+            <p>Disfruta de la lectura de tu ejemplar favorito</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/imagenesCarusel/CARUSEL2-3Optimizadaa.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen  y le agregue transiscion-->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU LIBRO FAVORITO</h5>
+            <p>Disfruta de la lectura de tu ejemplar favorito</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/imagenesCarusel/CARUSEL2-2Optimizadaa.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen, tambien transcicion -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU LIBRO FAVORITO</h5>
+            <p>Disfruta de la lectura de tu ejemplar favorito</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-bs-ride="carousel"  data-bs-interval="2300" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/imagenesCarusel/carrusel3-1Optimizada.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen y le agregue una trnassicion copada -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU LUGAR IDEAL</h5>
+            <p>Donde vos quieras
+              donde vos prefieras
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/imagenesCarusel/carrusel-3-2Optimizada.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen  y le agregue transiscion-->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU LUGAR IDEAL</h5>
+            <p>Donde vos quieras
+              donde vos prefieras
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/imagenesCarusel/carrusel-3-3Optimizada.webp" class="d-block w-100" alt="...">
+          <!-- aca combine el carrusel automatico con el carrusel que  tiene info en la imagen, tambien transcicion -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>TU LUGAR IDEAL</h5>
+            <p>Donde vos quieras
+              donde vos prefieras
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- el otro carusel -->
+  
+  <!-- fin corusel -->
+</section>
+
+
+<!-- cards -->
+<section class="container contenedorCards">
+
+  <!-- aca abajo pongo las cartas, puse el .row-cols 3 para poner 3 cartas te manera vertical -->
+  <!-- card 1 -->
+  <!-- card -->
+  <div  id="lista-productos" class="row  productosConClass">
+    <div class=" container d-flex justify-content-center mt-4  ">
+      <h2 class=" H2oferta animate__animated animate__pulse">New OFFERT</h2>
+    </div>
+
+    <div class="card  col-3  p-1 mb-0 mt-1  BackGrupdCards " >
+      <img src="/fotos/libro1.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyle">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Explora planetas, su influencia cósmica y conexión con la vida humana en tierra espacial.
+                    </li>
+        </ul>
+        <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 1000</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="1" >Comprar</button>
+      </div>
+    </div>
+    
+    <!--  -->
+    <!-- card 2-->
+    <div class="card  col-3  p-1 mb-0 mt-1 BackGrupdCards " >
+      <img src="/fotos/libro2.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyleTitulo">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Vampiro busca amor y lucha en mundo sobrenatural contemporáneo.
+
+
+
+
+          </li>
+        </ul>
+        <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 1300</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="2" >Comprar</button>
+      </div>
+    </div>
+    
+    <!-- -->
+    <!--  -->
+    <!--  -->
+    <!-- card 3 -->
+    <div class="card  col-3  p-1 mb-0 mt-1 BackGrupdCards " >
+      <img src="/fotos/libro3.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyleTitulo">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Búsqueda de redención en camino marcado por desafíos sobre todo inplacables
+          </li>
+        </ul>
+         <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 900</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="3" >Comprar</button>
+      </div>
+    </div>
+    
+    <!-- -->
+    <!--  -->
+    <!--  -->
+    <!-- card 4-->
+    <div class="card  col-3  p-1 mb-0 mt-1 BackGrupdCards " >
+      <img src="/fotos/libro4.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyleTitulo">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Planeta diverso con culturas, geografía y desafíos interconectados entre si-
+        </ul>
+         <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 2000</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="4" >Comprar</button>
+      </div>
+    </div>
+    
+    <!-- -->
+    
+  </div>
+<!-- -->
+<!--  -->
+<!--  -->
+</section>
+
+
+
+<!-- imagen evento -->
+<section >
+  <div class="container-fluid cardIndexHo  mb-0 mt-2" style="max-width: 1000px ">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img src="public/cardTIPOfila/cardOrinizatalIdnex.webp" class="img-fluid rounded-start h-100" alt="...">
+      </div>
+      <div class="col-md-5 cardHorizonatal">
+        <div class="card-body">
+          <h5 class="card-title card-text1">"La lectura es para la mente lo que el ejercicio es para el cuerpo." - Joseph Addison
+          </h5>
+          <p class="card-text1">Únase a nosotros el 20/10/2023 en un apasionante Taller de Lectura. Explore juntos las páginas de la literatura mientras discutimos ideas, compartimos perspectivas y fomentamos el amor por la lectura. Enriquécete intelectualmente y participa en esta experiencia enriquecedora. ¡Los esperamos para explorar el mundo de las palabras!
+          </p>
+          <p class="card-text1"><small class="text-body-secondary">Los esperamos...</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- cards -->
+
+<section class="container contenedorCards">
+  <div  id="lista-productos" class="row">
+    <!-- card 5 -->
+    <!-- card  col-3  p-1 mb-0 mt-1 BackGrupdCards -->
+    <div class="card  col-3  p-1 mb-0 mt-1 BackGrupdCards " >
+      <img src="/fotos/libro5.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyleTitulo">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Lucha personal supera obstáculos, revelando autodescubrimiento y crecimiento interior.            
+          </li>
+        </ul>
+         <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 2300</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="5" >Comprar</button>
+      </div>
+    </div>
+    
+    
+    <!-- -->
+    <!--  -->
+    <!--  -->
+    <!-- card 6-->
+    <div class="card  col-3  p-1 mb-0 mt-1 BackGrupdCards " >
+      <img src="/fotos/libro6.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyleTitulo">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Explora diseño personal de portadas literarias con creatividad única y especial en el mundo .
+          </li>
+        </ul>
+         <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 1100</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="6" >Comprar</button>
+      </div>
+    </div>
+    
+    <!-- card 7-->
+    <div class="card  col-3  p-1 mb-0 mt-1 BackGrupdCards " >
+      <img src="/fotos/libro7.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyleTitulo">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Sobreviviente lucha, desafía adversidades, encuentra fuerza interior inquebrantable.
+          </li>
+        </ul>
+         <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 1600</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="7" >Comprar</button>
+      </div>
+    </div>
+    
+    <!-- card 8-->
+    <div class="card  col-3  p-1 mb-0 mt-1 BackGrupdCards " >
+      <img src="/fotos/libro8.webp" class="card-img-top" alt="...">
+      <div class="card-body   CardBodyExe ">
+        <h5 class="card-title CardStyleTitulo">Fisico</h5>
+        <!-- Lista con caracteristicas  de la card -->
+        <ul class="list-group mb-3">
+          <li class="list-group-item list-group-item-primary CardStyle">Aventura surreal, búsqueda de identidad, revela conexiones sorprendentes universo paralelos.
+          </li>
+        </ul>
+         <li style="list-style-type: none;" class="text-center CarritoFont"><i class="bi bi-cash-coin"> 1299</i></li>
+        <button class="btn btn-outline-secondary  ExeBoton  " data-id="8" >Comprar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- whatsapp -->
+<div class="WhatsappDIV">
+  <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl " style="color: #ffffff;"></i></a>
+</div>
+
+
+</main>
+
+
+<footer>
+  <div class="container-fluid footerContacto pt-5 pb-4">
+    
+    <div class="row">
+      
+      <p class="d-flex justify-content-center colorfooter">Si te suscribes a nuestros mails, podras obtener benecificos en tus proximas compras! 20% off</p>
+      <!-- inicio col 1 footer -->
+      <div class="col-4">
+        <h3 class="estilosFoter">Gracias por confian en nosotros</h3>
+        <p class="colorfooter">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error dolorem accusantium id voluptas magnam ipsum nostrum illo aut mollitia doloremque!</p>
+        <a href="https://www.chroniclebooks.com/pages/privacy-policy">Politicasa de privacidad</a>/ <a href="https://www.chroniclebooks.com/pages/ccpa-opt-out">No vender informacion personal</a><br>
+        <a href="https://www.wipo.int/portal/es/">Propiedad intelectual</a>
+        <!-- fin columna 1 footer de footer -->
+        <!-- inicio colmna 2 footer -->
+      </div>
+      <div class="col-4">
+      <ul class="list-group-flush ">
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-3">Publicidad y Asesoramiento</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-4">Contratos por medios electronicos</a></li >
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-5">Arrepentimientos y Terminologia</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-6">Clausulas abusivas</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-7">Contrato de adhesion</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#ley">Texto completo de la norma</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-1">Consumidor y consumidoras</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/contratos-de-consumo#titulo-2">Relaciones de consumo</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/asuntos-estrategicos/estrategia-nacional-para-el-desarrollo-de-la-economia-del-hidrogeno/desarrollo">Desarrolo de proveedores</a></li>
+        <li class="list-group-item"><a href="https://www.argentina.gob.ar/asuntos-estrategicos/estrategia-nacional-para-el-desarrollo-de-la-economia-del-hidrogeno/integracion">Integracion y fortalecimiento de webs</a></li>
+      </ul>
+      </div>
+      <!-- fin col2 footer -->
+      <!-- inicio columna 3 footer -->
+      <div class="col-4">
+        <h3 class="estilosFoter">Coorporation Asocietive</h3>
+        
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia neque cumque magnam, architecto iusto nobis esse nihil dolores placeat repellendus ducimus velit, porro nisi molestias. Explicabo laborum dolores similique alias!</p>
+        <div class="row  ">
+          <div class="card-body imgEmpresas ms-4 ">
+            
+              <img src="/criptomonedas/bitcionOptimazado.webp" alt="">
+              <img src="/criptomonedas/dogeOptimizada.webp" alt="">
+              <img src="/criptomonedas/etherOptimizado.webp" alt="">
+              <img src="/criptomonedas/rippleOptimizada.webp" alt="">
+              <p class="colorfooter">Todos los detechos reservados.</p>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p>Copyrigh☺2023,Choniclik books</p>
+  </div>
+
+</footer>
+
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
